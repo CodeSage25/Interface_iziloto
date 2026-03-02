@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Loto10, Loto9, Iziball - Iziloto" />
+    <title>Loto10, Loto9, Iziball - Iziloto</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/image/iziLoto_Rond.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-left-logo">
+        <a href="https://iziloto.cm">
+          <img src="./assets/image/iziLoto_Rond.png" alt="iziloto logo" />
+        </a>
+      </div>
+      <div class="nav-middle">
+        <div class="nav-item">
+          <svg
+            class="loto-ball"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <radialGradient id="ballGrad10" cx="40%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#ffffff" />
+                <stop offset="40%" stop-color="#e0e0e0" />
+                <stop offset="100%" stop-color="#a0a0a0" />
+              </radialGradient>
+              <filter id="shadow10">
+                <feDropShadow
+                  dx="2"
+                  dy="3"
+                  stdDeviation="3"
+                  flood-opacity="0.4"
+                />
+              </filter>
+            </defs>
+            <circle
+              cx="50"
+              cy="50"
+              r="36"
+              fill="url(#ballGrad10)"
+              stroke="#888"
+              stroke-width="1.5"
+              filter="url(#shadow10)"
+            />
+            <ellipse
+              cx="50"
+              cy="30"
+              rx="28"
+              ry="16"
+              fill="white"
+              opacity="0.25"
+            />
+            <text
+              x="50"
+              y="58"
+              text-anchor="middle"
+              font-size="30"
+              font-weight="bold"
+              fill="#1a3ec2"
+              font-family="Arial, sans-serif"
+            >
+              10
+            </text>
+          </svg>
+          <span class="nav-label">Loto10</span>
+        </div>
+        <div class="nav-item">
+          <svg
+            class="loto-ball"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <radialGradient id="ballGrad9" cx="40%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#ffffff" />
+                <stop offset="40%" stop-color="#e0e0e0" />
+                <stop offset="100%" stop-color="#a0a0a0" />
+              </radialGradient>
+              <filter id="shadow9">
+                <feDropShadow
+                  dx="2"
+                  dy="3"
+                  stdDeviation="3"
+                  flood-opacity="0.4"
+                />
+              </filter>
+            </defs>
+            <circle
+              cx="50"
+              cy="50"
+              r="36"
+              fill="url(#ballGrad9)"
+              stroke="#888"
+              stroke-width="1.5"
+              filter="url(#shadow9)"
+            />
+            <ellipse
+              cx="50"
+              cy="30"
+              rx="28"
+              ry="16"
+              fill="white"
+              opacity="0.25"
+            />
+            <text
+              x="50"
+              y="58"
+              text-anchor="middle"
+              font-size="32"
+              font-weight="bold"
+              fill="#f5c518"
+              font-family="Arial, sans-serif"
+            >
+              9
+            </text>
+          </svg>
+          <span class="nav-label">Loto9</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER — Carousel -->
+    <header id="carousel">
+      <div class="carousel-track">
+        <img src="./assets/image/iziloto_avec_fond.png" alt="promo 1" />
+        <img src="./assets/image/iziloto_avec_fond.png" alt="promo 2" />
+        <img src="./assets/image/iziloto_avec_fond.png" alt="promo 3" />
+        <img src="./assets/image/iziloto_avec_fond.png" alt="promo 4" />
+        <!-- duplicates for seamless loop -->
+        <img src="./assets/image/iziloto_avec_fond.png" alt="promo 1" />
+        <img src="./assets/image/iziloto_avec_fond.png" alt="promo 2" />
+        <img src="./assets/image/iziloto_avec_fond.png" alt="promo 3" />
+        <img src="./assets/image/iziloto_avec_fond.png" alt="promo 4" />
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="main-up">
+        <h1>Jeux Iziloto</h1>
+      </div>
+      <div class="main-down">
+        <div class="game-card">
+          <button>
+            <img
+              src="./assets/image/Logo_Loto10_ET FOND (1).png"
+              alt="Loto 10"
+            />
+          </button>
+        </div>
+        <div class="game-card">
+          <button>
+            <img src="./assets/image/Logo_Loto9_Expresso.png" alt="Loto 9" />
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- SECTION TEXT -->
+    <section class="section-text">
+      <h2>À propos d'<span class="yellow">iziloto</span></h2>
+
+      <div class="text-block">
+        <p>
+          Bienvenue sur <span class="yellow">iziloto</span> – La plateforme de
+          paris la plus fiable au Cameroun. <br />
+          Nous avons créé Iziloto pour une raison simple&nbsp;: vous offrir une
+          expérience de pari digne de confiance. En partenariat avec Dyce, nous
+          avons lancé <span class="yellow">iziloto.cm</span> avec un objectif
+          clair&nbsp;: proposer au monde entier une expérience de pari
+          sécurisée, équitable et fiable. Nous comprenons le jeu, mais surtout,
+          nous vous comprenons. Oubliez les inquiétudes concernant la sécurité
+          de vos données ou la réception de vos gains. Avec nous, vous pouvez
+          vous concentrer sur l'essentiel&nbsp;: l'adrénaline du jeu.
+        </p>
+        <p class="promise-title">Notre promesse est simple&nbsp;:</p>
+        <ul>
+          <li>
+            <strong>Paiements garantis&nbsp;:</strong> Vos gains vous
+            appartiennent. Nous assurons des retraits rapides et fiables, à
+            chaque fois.
+          </li>
+          <li>
+            <strong>Sécurité totale&nbsp;:</strong> Vos informations
+            personnelles et financières sont protégées par des systèmes de
+            sécurité de niveau mondial.
+          </li>
+          <li>
+            <strong>Jeu équitable&nbsp;:</strong> Nous opérons en toute
+            transparence et disposons de licences complètes au Cameroun.
+          </li>
+        </ul>
+        <p>
+          Rejoignez des milliers de joueurs qui parient en toute confiance.
+          Voici les paris, tels qu'ils devraient être.
+        </p>
+      </div>
+
+      <hr class="separator" />
+
+      <div class="text-block warning-block">
+        <p class="warning-highlight">
+          Quand le plaisir s'arrête, ARRÊTEZ&nbsp;! Non au jeu des mineurs.
+          Jouez de manière responsable.
+        </p>
+        <p>
+          Les paris ne constituent pas une source de revenu garantie. Vous
+          pouvez récupérer moins d'argent que celui que vous avez misé. Ne
+          pariez que des sommes que vous pouvez vous permettre de perdre. Si
+          vous sentez que votre pratique du jeu devient problématique et nuit à
+          votre bien-être, contactez-nous et demandez une auto-exclusion.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-payments">
+        <img src="./assets/image/image_Mtn_momo.png" alt="MTN MoMo" />
+        <img src="./assets/image/orange_money.png" alt="Orange Money" />
+      </div>
+
+      <div class="footer-logo">
+        <img src="./assets/image/iziLoto_Rond.png" alt="logo iziloto" />
+      </div>
+
+      <div class="footer-badge">
+        <span class="badge-21">21+</span>
+      </div>
+
+      <p class="footer-copy">
+        © 2026 <span class="yellow">iziloto</span>. Tous droits réservés.
+      </p>
+      <p class="footer-powered">
+        POWERED BY <br />
+        Dyce
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

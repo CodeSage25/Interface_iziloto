@@ -1,0 +1,347 @@
+/* ===== RESET & BASE ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #302683;
+  color: #faecd3;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== UTILITY ===== */
+.yellow {
+  color: #f5c518;
+}
+
+/* ===== NAV ===== */
+nav {
+  background: #251d65;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.nav-left-logo img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.nav-left-logo img:hover {
+  transform: scale(1.1);
+}
+
+.nav-middle {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.nav-item:hover {
+  transform: translateY(-3px);
+}
+
+.loto-ball {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-label {
+  color: #faecd3;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===== HEADER / CAROUSEL ===== */
+header {
+  overflow: hidden;
+  background: #302683;
+  padding: 16px 0;
+  border-bottom: 2px solid rgba(250, 236, 211, 0.1);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.carousel-track img {
+  height: 180px;
+  border-radius: 14px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+header.paused .carousel-track {
+  animation-play-state: paused;
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: 40px 24px 48px;
+  text-align: center;
+}
+
+.main-up h1 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #faecd3;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.main-down {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.game-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.game-card:hover {
+  box-shadow: 0 0 24px rgba(245, 197, 24, 0.35);
+}
+
+.game-card button {
+  padding: 0;
+}
+
+.game-card img {
+  height: 220px;
+  border-radius: 18px;
+  transition: transform 0.35s ease;
+}
+
+.game-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== SECTION TEXT ===== */
+.section-text {
+  padding: 48px 24px 32px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.section-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.text-block {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #ddd;
+}
+
+.text-block p {
+  margin-bottom: 14px;
+}
+
+.promise-title {
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.text-block ul {
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+.text-block ul li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+
+.text-block ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #f5c518;
+  font-size: 0.85rem;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid whitesmoke;
+  margin: 32px 0;
+  opacity: 0.5;
+}
+
+.warning-highlight {
+  color: #e53935;
+  font-weight: 800;
+  font-size: 1.05rem;
+  margin-bottom: 12px !important;
+}
+
+.warning-block p:not(.warning-highlight) {
+  color: #ccc;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #251d65;
+  padding: 40px 24px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-top: 2px solid rgba(250, 236, 211, 0.1);
+}
+
+.footer-payments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-payments img {
+  height: 48px;
+  border-radius: 8px;
+  /* background: white; */
+  padding: 4px 10px;
+  transition: transform 0.3s;
+}
+
+.footer-payments img:hover {
+  transform: scale(1.05);
+}
+
+.footer-logo img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 20px rgba(245, 197, 24, 0.6),
+    0 0 40px rgba(245, 197, 24, 0.3),
+    0 0 60px rgba(245, 197, 24, 0.15);
+}
+
+.footer-badge {
+  display: flex;
+  justify-content: center;
+}
+
+.badge-21 {
+  display: inline-block;
+  background: whitesmoke;
+  color: #251d65;
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding: 6px 18px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+.footer-powered {
+  font-size: 0.8rem;
+  color: #999;
+  line-height: 1.5;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .nav-middle {
+    gap: 16px;
+  }
+
+  .loto-ball {
+    width: 38px;
+    height: 38px;
+  }
+
+  .carousel-track img {
+    height: 120px;
+  }
+
+  .main-down {
+    gap: 20px;
+  }
+
+  .game-card img {
+    height: 160px;
+  }
+
+  .section-text {
+    padding: 32px 16px 24px;
+  }
+}
